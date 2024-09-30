@@ -1,0 +1,166 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+nav.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav.navbar ul li a:hover {
+    color: #ddd;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('images/backdrop.webp');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1;
+    color: white;
+}
+
+.hero-content img.profile-photo {
+    width: 300px; /* Enlarged size */
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+}
+
+/* About Section */
+.about, #blogs, #social {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2, .blogs h2, .social h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p, .blogs p, .social p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+/* Blog Cards */
+.blog-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.blog-card a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Section */
+.social-links {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    color: #0066cc;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
